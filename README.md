@@ -6,9 +6,9 @@
 
 2. Fill in necessary information in the .env file. Token is your bot token and the two guild settings are the two guild ids
 
-3. run - npm install to get necessary modules
+3. run ``npm install`` to get necessary modules
 
-4. npm run dev to start bot
+4. ``npm run dev`` to start bot
 
 ## Adding More Guilds
 You can do this for as many guilds as you would like:
