@@ -15,17 +15,17 @@ const guildonecommands = [];
 client.guildonecommands = new Collection();
 
 for (const file of GuildOneCommandFiles) {
-	const guildonecommand = require(`./commands/Nugget Dev/${file}`);
+	const guildonecommand = require(`./commands/Guild One/${file}`);
 	guildonecommands.push(guildonecommand.data.toJSON());
 	client.guildonecommands.set(guildonecommand.data.name, guildonecommand);
 }
 
-const GuildTwoCommandFiles = fs.readdirSync("./commands/DOD").filter(file => file.endsWith(".js"));
+const GuildTwoCommandFiles = fs.readdirSync("./commands/Guild Two").filter(file => file.endsWith(".js"));
 const guildtwocommands = [];
 client.guildtwocommands = new Collection();
 
 for (const file of GuildTwoCommandFiles) {
-	const guildtwocommand = require(`./commands/DOD/${file}`);
+	const guildtwocommand = require(`./commands/Guild Two/${file}`);
 	guildtwocommands.push(guildtwocommand.data.toJSON());
 	client.guildtwocommands.set(guildtwocommand.data.name, guildtwocommand);
 }
