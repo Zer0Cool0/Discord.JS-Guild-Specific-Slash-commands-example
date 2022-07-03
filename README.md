@@ -1,5 +1,7 @@
 # Discord.JS-MultiGuild-Slash-Command-Example
 
+This is an example on how to register commands locally with specific guilds. (Servers)
+
 
 ## How to Install Example
 1. Clone repository
